@@ -1,13 +1,13 @@
 package com.example.SpringFramework.Pages.Google;
 
-import com.example.SpringFramework.Base;
+import com.example.SpringFramework.annotation.PageFragments;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
+@PageFragments
 public class SearchResults extends Base {
 
 

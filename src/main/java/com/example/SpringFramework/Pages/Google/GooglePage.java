@@ -1,11 +1,10 @@
 package com.example.SpringFramework.Pages.Google;
 
-import com.example.SpringFramework.Base;
+import com.example.SpringFramework.annotation.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component
+@Page
 public class GooglePage extends Base {
 
     @Autowired
@@ -15,7 +14,7 @@ public class GooglePage extends Base {
     private SearchResults searchResults;
 
     @Value("${application.url}")
-    public String url;
+    private String url;
 
     public void goTo() {
         this.driver.get(url);
